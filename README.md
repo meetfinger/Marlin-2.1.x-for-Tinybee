@@ -1,3 +1,14 @@
+## Forked from official Marlin 
+with personal configurations for my DIY 3D Printer using a Tinybee Motherboard: 
+* TMC2209 Drivers
+* LJ12A3-BY Probe for ABL and Z_Min
+* trying out LIN_ADVANCE with EXPERIMENTAL_I2S_LA 
+* Inputshaping can be enabled in FW-config and can be disabled in settings if problems occur: travel too short/too far, homing problems,... 
+* Extruder Fan is set to Auto-On at 50°C
+* Cooling Fan is set to be controlled with M106
+* some other minor changes
+
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
