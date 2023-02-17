@@ -58,12 +58,20 @@
 //
 // Enable I2S stepper stream
 //
+/*
 #define I2S_STEPPER_STREAM
 #if ENABLED(I2S_STEPPER_STREAM)
   #define I2S_WS                              26
   #define I2S_BCK                             25
   #define I2S_DATA                            27
 #endif
+*/
+#undef I2S_STEPPER_STREAM
+#define I2S_STEPPER_STREAM
+#define I2S_WS                                26
+#define I2S_BCK                               25
+#define I2S_DATA                              27
+#undef LIN_ADVANCE                                // Currently, I2S stream does not work with linear advance
 
 //
 // Steppers
@@ -104,12 +112,12 @@
 //
 #define HEATER_0_PIN                         145
 #define HEATER_1_PIN                         146
-#define FAN_PIN                              147
-#define FAN1_PIN                             148
+#define FAN_PIN                              148
+//#define FAN1_PIN                             148
 #define HEATER_BED_PIN                       144
 
 //#define CONTROLLER_FAN_PIN                 148
-//#define E0_AUTO_FAN_PIN                    148  // need to update Configuration_adv.h @section extruder
+#define E0_AUTO_FAN_PIN                    147  // need to update Configuration_adv.h @section extruder
 //#define E1_AUTO_FAN_PIN                    149  // need to update Configuration_adv.h @section extruder
 
 //
